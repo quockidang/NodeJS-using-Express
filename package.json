@@ -1,0 +1,24 @@
+{
+  "name": "b2-template-engines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "md5": "^2.2.1",
+    "pug": "^2.0.3",
+    "short-id": "0.1.0-1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
