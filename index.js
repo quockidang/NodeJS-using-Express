@@ -7,6 +7,7 @@ var db = require('./db');
 var userRouter = require('./routers/user.router'); 
 var authLogin = require('./routers/auth.route');
 var authMiddleware = require('./middleware/auth.middleware');
+var productRouter = require('./routers/product.route');
 
 var port = 3000;
 
@@ -20,6 +21,8 @@ app.use(cookieParser());
 
 app.use('/users', authMiddleware.requireAuth, userRouter);
 app.use('/auth', authLogin);
+
+app.use('/products', productRouter)
 
 
 app.listen(port, function(){
